@@ -1,13 +1,9 @@
 const Sequelize = require('sequelize');
+const bcrypt = require('bcrypt');
 const { STRING } = Sequelize;
 const jwt = require('jsonwebtoken');
 
 const SECRET_KEY = process.env.JWT;
-//TOKEN
-// const token = jwt.sign({ id: 1 }, SECRET_KEY);
-//TOKEN
-// const payload = jwt.verify(token, SECRET_KEY);
-// console.log(payload);
 
 const config = {
   logging: false,
